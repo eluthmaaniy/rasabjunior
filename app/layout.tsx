@@ -30,7 +30,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   icons: {
-    icon: profileImageUrl,
+    icon: [
+      { url: "/icon.jpg", type: "image/jpeg" },
+      { url: profileImageUrl, type: "image/jpeg" },
+    ],
+    apple: [{ url: "/icon.jpg", type: "image/jpeg" }],
+    shortcut: "/icon.jpg",
   },
 };
 
